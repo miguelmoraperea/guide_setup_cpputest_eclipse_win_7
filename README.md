@@ -48,7 +48,7 @@ The purpose of this repository is to help to setup CppUTest using Eclipse in a W
 
    _cygwin\usr\local\lib_
 
-12. Copye this lib folder and it's contents and paste it on the CppUTest folder.
+12. Copy this lib folder and it's contents and paste it on the CppUTest folder.
 
 11. Add _CPPUTEST_HOME_ to your systems variables using the cpputest folder
 
@@ -66,12 +66,14 @@ The purpose of this repository is to help to setup CppUTest using Eclipse in a W
     You will find the plugin under:
 
     [ ] Programming Languages
-        [x] C/C++ Unit Testing Support.
+    
+         [x] C/C++ Unit Testing Support.
         
     Also install:
 
     [ ] Linux Tools  
-        [x] Gcov Integration
+    
+         [x] Gcov Integration
         
 17. Clone the [CppUTest Eclipse Test Runner](https://github.com/tcmak/CppUTestEclipseJunoTestRunner) and add it to Eclipse following the instructions below:
 
