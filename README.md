@@ -6,11 +6,14 @@ The purpose of this repository is to help to setup CppUTest using Eclipse in a W
 
 1. Download the 32-bit version of [Cygwin](https://www.cygwin.com/) and run the installation package.
 2. Install the _Devel_ category packages:
-  
-3. Add your new Cygwin bin directory to the Path variable.
-  
 
-4. Download the lateste package of CppUTest from [CppUTest Github Page](https://github.com/cpputest/cpputest) using the following command:
+   <img src="images/install_cygwin_packages_selection.PNG" width = "400">
+  
+3. Add your new Cygwin bin directory to the Path variable:
+
+   <img src="images/add_cygwin_to_path_system_variable.PNG" width = "400">
+  
+4. Download the latest package of CppUTest from [CppUTest Github Page](https://github.com/cpputest/cpputest) using the following command:
 
    `git clone git://github.com/cpputest/cpputest.git`. 
 
@@ -52,7 +55,8 @@ The purpose of this repository is to help to setup CppUTest using Eclipse in a W
 13. Download and Install _Java Development Kit_
 
 14. Add the JDK bin folder to the _Path_ variable
-    /* image */
+    
+    <img src="images/add_java_to_path_system_variable.PNG" width = "400">
 
 15. Download and install [Eclipse IDE](https://www.eclipse.org/downloads/). Select _Eclipse IDE for C/C++ Developers_ during installation.
 
@@ -64,7 +68,7 @@ The purpose of this repository is to help to setup CppUTest using Eclipse in a W
     [ ] Programming Languages
         [x] C/C++ Unit Testing Support.
         
-    While you are at it, you might also want to install:
+    Also install:
 
     [ ] Linux Tools  
         [x] Gcov Integration
@@ -97,8 +101,28 @@ The purpose of this repository is to help to setup CppUTest using Eclipse in a W
 
 19. Add the sample project to Eclipse
 
-20. In Eclipse go to _New Launch Configuration_ and select C/C++ Unit, under _Test Runner_ select _CppUTest Tests Runner_
+20. Add the path to the CppUTest folder in the settings of the Cywin C Compiler and Cygwin C++ Compiler in Eclipse:
 
-21. Build the project
+    <img src="images/cygwin_c++_compiler_includes.PNG" width = "400">
+    
+    <img src="images/cygwin_c_compiler_includes.PNG" width = "400">
 
-22. Run the project
+21. Add the CppUTest library to the Cygwin C++ Linker settings in Eclipse:
+
+    <img src="images/cygwin_c++_linker_libraries_setup.PNG" width = "400">
+
+22. Build the project
+
+23. In Eclipse go to _New Launch Configuration_ and select C/C++ Unit:
+
+    <img src="images/new_launch_config.PNG" width = "400">
+
+24. Under _Test Runner_ select _CppUTest Tests Runner_:
+
+    <img src="images/select_test_runner_config.PNG" width = "400">
+    
+24. Run the project
+
+25. The tests should run and show passed:
+
+    <img src="images/sample_test_passed.PNG" width = "400">
